@@ -3,6 +3,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
+    line-height: 28px;
 }
 
 @mixin font-style-bold {
@@ -13,4 +14,42 @@
 @mixin font-style-italic {
     @include font-style-regular;
     font-style: italic;
+}
+
+@mixin card {
+    height: 300px;
+    width: 200px;
+    border: 1px solid;
+    margin: 5px;
+}
+
+@mixin play-button {
+    width: 308px;
+    height: 66px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 5px;
+    padding: 0.5rem 2rem;
+    @include font-style-bold;
+    box-sizing: border-box;
+}
+
+.play-button-primary-on-dark {
+    @include play-button;
+    background-color: $main-color-red;
+    color: $main-color-white;
+}
+
+.play-button-secondary {
+    @include play-button;
+    background-color: $main-color-lightblue;
+    color: $main-color-black;
+}
+
+.play-button-primary-on-white {
+    @include play-button;
+    background-color: $main-color-white;
+    color: $main-color-lightblue;
+    box-sizing: border-box;
+
 }
