@@ -34,7 +34,7 @@
     box-sizing: border-box;
 }
 
-.play-button-primary-on-dark {
+.play-button-primary-on-white {
     @include play-button;
     background-color: $main-color-red;
     color: $main-color-white;
@@ -46,10 +46,11 @@
     color: $main-color-black;
 }
 
-.play-button-primary-on-white {
+.play-button-primary-on-dark {
     @include play-button;
-    background-color: $main-color-white;
+    background-color: transparent;
     color: $main-color-lightblue;
     box-sizing: border-box;
+    border: 2px solid;
 
 }
