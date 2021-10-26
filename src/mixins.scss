@@ -1,0 +1,16 @@
+@mixin font-style-regular {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+@mixin font-style-bold {
+    @include font-style-regular;
+    font-weight: bold;
+}
+
+@mixin font-style-italic {
+    @include font-style-regular;
+    font-style: italic;
+}
