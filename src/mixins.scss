@@ -25,11 +25,9 @@
 
 @mixin play-button {
     @include font-style-bold;
-    width: 308px;
-    height: 66px;
     border-radius: 4px;
     text-align: center;
-    margin: 5px;
-    padding: 0.5rem 2rem;
+    margin: 0.3em;
+    padding: 0.75em 2em;
     box-sizing: border-box;
 }

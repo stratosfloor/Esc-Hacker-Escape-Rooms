@@ -37,12 +37,12 @@ body {
     img {
         width: 128px;
         height: 82px;
-        margin: 27px;
+        margin: 1em;
     }
     .brandname {
         display: flex;
         align-items: flex-end;
-        font-size: 40px;
+        font-size: 1.4em;
     }
 }
 
@@ -65,11 +65,9 @@ body {
 }
 
 .hero {
-    max-width: 1280px;
-    height: auto;
     background-color: $main-color-white;
     position: relative;
-    
+
     img {
         max-width: 100%;
         height: 100%;
@@ -77,7 +75,7 @@ body {
 
     .play-buttons {
         position: absolute;
-        max-width: 620px;
+        max-width: 27rem;
         left: 0;
         right: 0;
         margin: auto;
@@ -86,8 +84,6 @@ body {
 
 }
 .testimonials {
-    width: 100%;
-    height: auto;
     margin: 0;
     padding: 5rem 0;
     background-color: $main-color-white;
@@ -109,7 +105,7 @@ body {
             padding: 0 1rem;
         }
         figcaption {
-            font-size: 18px;
+            font-size: 0.75rem;
             font-style: normal;
             padding-top: 0.5rem;
         }
@@ -133,14 +129,12 @@ body {
     h1 {
         display: block;
         text-align: center;
-        font-size: 36px;
-        padding: 40px;
+        font-size: 1.5rem;
+        padding: 3rem;
         margin: 0;
     }
 
     .challanges {
-        width: 100%;
-        height: 100%;
         display: flex;
         justify-content: space-evenly;
 
@@ -159,16 +153,17 @@ body {
             }
 
             .room-content {
-                padding: 20px;
+                padding: 0.83rem;
                 position: relative;
                 .room-name {
-                    font-size: 28px;
+                    font-size: 1.16rem;
                     color: black;
                     }
                 .second-row {
-                    font-size: 14px;
+                    font-size: 0.7rem;
                     display: flex;
                     justify-content: space-between;
+                    padding-bottom: 0.2em;
                     .review {
                         .star {
                             color: $main-color-red;
@@ -178,21 +173,14 @@ body {
                     } 
                 }
                 .room-info  {
-                    font-size: 18px;
-                    padding-top: 20px;
+                    font-size: 0.64rem;
                 }
                 .book-room {
                     position: absolute;
-                    left: 28%;
-                    bottom: -5%;
+                    right: 1%;
+                    bottom: 0.75em;
                     a {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        transform: scale(0.6);
-                        font-size: 18px;
-                        padding: 0;
+                        font-size: 0.75rem;
                     }
                 }
             }
@@ -204,7 +192,7 @@ body {
         justify-content: center;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 4rem;
+        padding: 4em;
         
         li {
             list-style-type: none;
@@ -214,121 +202,81 @@ body {
 
 .story {
     background-color:$main-color-black;
-    width: auto;
-    height: 500px;
+
     margin: 0;
-    padding: 0;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     blockquote {
-        display: flex;
+        text-align:center;
         color: $main-color-white;
-        font-size: 28px;
-        padding: 0 10rem;
+        font-size: 1.16rem;
+        padding: 0 8rem;
     }
 
     a {
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        // ska sätta nåt här
     }
 }
 
 .play-grid {
-
-    width: 1280px;
-    height: 920px;
     display: flex;
     flex-wrap: wrap;
-
     * {
         flex: 1 1 50%;
     }
 
-    .play-onsite-pic {
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-    }
-        }
-    .play-online-pic {
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
+    img {
+        width: 100%;
+        height: 100%;
     }
 
-    .play-onsite-content {
+    .play-onsite-content, .play-online-content {
         background-color: $main-color-white;
         * {
-            display: inline-block;
-            margin: 1rem 3rem 0 4rem;
-        }
-        h2 {
-            font-size: 32px;
-            margin-top: 3rem;
-        }
-
-        span {
-            font-size: 24px;
-        }
-        a {
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-    }
-    .play-online-content {
-        background-color: $main-color-white;
-        * {
-            display: inline-block;
-            margin: 1rem 3rem 0 4rem;
+            flex-direction: column;
+            margin: 0 4rem;
         }
         h2 {
             font-size: 32px;
             margin-top: 3rem;
         }
         span {
-            font-size: 24px;
+            font-size: 1rem;
+            margin-top: 1rem;
         }
         a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-block;
+            margin-top: 1rem;
         }
-
-
+    }
 }
 
 .footer {
-    width: 100%;
-    max-height: 480px;
+
     background-color: $main-color-black;
     color: $main-color-white;
-    font-size: 18px;
+    font-size: 0.75rem;
     display: flex;
 
     .about-esc {
-        width: 400px;
-        height: 400px;
-        margin: 5rem 3rem 1rem;
-        padding: 0;
+        margin: 5rem 3rem 1rem 3rem;
     }
 
     .sitemap {
-        margin: 5rem 3rem 1rem;
-        padding-left: 5rem;
+        display: inline-block;
+        white-space: nowrap;
+        margin: 5rem 2rem;
+        padding:0;
+        
     }
 
     .follow-us {
-        margin: 5rem 3rem 1rem;
+        margin: 5rem 4rem 0 2rem;
+        padding: 0;
     }
 
     ul {
