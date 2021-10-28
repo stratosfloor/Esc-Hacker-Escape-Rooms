@@ -1,0 +1,357 @@
+.play-button-primary-on-white {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
+  width: 308px;
+  height: 66px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 5px;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+  background-color: #E3170A;
+  color: #FFFFFF;
+}
+
+.play-button-secondary {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
+  width: 308px;
+  height: 66px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 5px;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+  background-color: #8ACFE5;
+  color: #011827;
+}
+
+.play-button-primary-on-dark {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
+  width: 308px;
+  height: 66px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 5px;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #8ACFE5;
+  box-sizing: border-box;
+  border: 2px solid;
+}
+
+html {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+body {
+  background-color: #011827;
+}
+body a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 5px auto;
+}
+
+.header {
+  background-color: #011827;
+  color: #FFFFFF;
+  display: flex;
+}
+.header img {
+  width: 128px;
+  height: 82px;
+  margin: 27px;
+}
+.header .brandname {
+  display: flex;
+  align-items: flex-end;
+  font-size: 40px;
+}
+
+.navbar {
+  background-color: #011827;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.hero {
+  max-width: 1280px;
+  height: auto;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.hero img {
+  max-width: 100%;
+  height: 100%;
+}
+.hero .play-buttons {
+  position: absolute;
+  max-width: 620px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -0.2rem;
+}
+
+.testimonials {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 5rem 0;
+  background-color: #FFFFFF;
+  display: flex;
+}
+.testimonials > * {
+  flex-basis: 50%;
+}
+.testimonials > * img {
+  float: left;
+  display: flex;
+}
+.testimonials > * blockquote {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0 1rem;
+}
+.testimonials > * figcaption {
+  font-size: 18px;
+  font-style: normal;
+  padding-top: 0.5rem;
+}
+.testimonials .first {
+  padding-left: 4rem;
+}
+.testimonials .second > img {
+  padding-left: 0rem;
+}
+
+.popular-challenges {
+  display: block;
+  background-color: #FFFFFF;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.popular-challenges h1 {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  padding: 40px;
+  margin: 0;
+}
+.popular-challenges .challanges {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.popular-challenges .challanges > * {
+  height: 446px;
+  width: 363px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin: 5px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.popular-challenges .challanges > * > * {
+  grid-row: span 1;
+}
+.popular-challenges .challanges > * .room-pic {
+  background-image: url("img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popular-challenges .challanges > * .room-content {
+  padding: 20px;
+  position: relative;
+}
+.popular-challenges .challanges > * .room-content .room-name {
+  font-size: 28px;
+  color: black;
+}
+.popular-challenges .challanges > * .room-content .second-row {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.popular-challenges .challanges > * .room-content .second-row .review .star {
+  color: #E3170A;
+}
+.popular-challenges .challanges > * .room-content .room-info {
+  font-size: 18px;
+  padding-top: 20px;
+}
+.popular-challenges .challanges > * .room-content .book-room {
+  position: absolute;
+  left: 28%;
+  bottom: -5%;
+}
+.popular-challenges .challanges > * .room-content .book-room a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.6);
+  font-size: 18px;
+  padding: 0;
+}
+.popular-challenges ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 4rem;
+}
+.popular-challenges ul li {
+  list-style-type: none;
+}
+
+.story {
+  background-color: #011827;
+  width: auto;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.story blockquote {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 28px;
+  padding: 0 10rem;
+}
+.story a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-grid {
+  width: 1280px;
+  height: 920px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.play-grid * {
+  flex: 1 1 50%;
+}
+.play-grid .play-onsite-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.play-online-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.play-onsite-content {
+  background-color: #FFFFFF;
+}
+.play-onsite-content * {
+  display: inline-block;
+  margin: 1rem 3rem 0 4rem;
+}
+.play-onsite-content h2 {
+  font-size: 32px;
+  margin-top: 3rem;
+}
+.play-onsite-content span {
+  font-size: 24px;
+}
+.play-onsite-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-online-content {
+  background-color: #FFFFFF;
+}
+.play-online-content * {
+  display: inline-block;
+  margin: 1rem 3rem 0 4rem;
+}
+.play-online-content h2 {
+  font-size: 32px;
+  margin-top: 3rem;
+}
+.play-online-content span {
+  font-size: 24px;
+}
+.play-online-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  max-height: 480px;
+  background-color: #011827;
+  color: #FFFFFF;
+  font-size: 18px;
+  display: flex;
+}
+.footer .about-esc {
+  width: 400px;
+  height: 400px;
+  margin: 5rem 3rem 1rem;
+  padding: 0;
+}
+.footer .sitemap {
+  margin: 5rem 3rem 1rem;
+  padding-left: 5rem;
+}
+.footer .follow-us {
+  margin: 5rem 3rem 1rem;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer ul h4 {
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
