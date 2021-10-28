@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: #faa;
+    background-color: $main-color-black;
 
     a {
         color: $main-color-white;
@@ -185,7 +185,6 @@ body {
                     position: absolute;
                     left: 28%;
                     bottom: -5%;
-                    // margin-left: 20%;
                     a {
                         display: flex;
                         justify-content: center;
@@ -212,8 +211,6 @@ body {
         }
     }
 }
-
-
 
 .story {
     background-color:$main-color-black;
