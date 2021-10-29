@@ -5,6 +5,7 @@ $main-color-grey: #B6BDB5;
 $main-color-darkblue: #36769D;
 $main-color-lightblue: #8ACFE5;
 $main-color-white: #FFFFFF;
+$mobile-screen-breakpoint: 640px;
 
 @import 'mixins.scss';
 @import 'button-classes.scss';
@@ -25,6 +26,11 @@ body {
 .container {
     max-width: 1280px;
     margin: 5px auto;
+
+    @include mobile-screen {
+        // max-width: auto;
+        // margin: 0 auto;
+    }
 }
 
 
@@ -32,8 +38,7 @@ body {
     background-color: $main-color-black;
     color: $main-color-white;
     display: flex;
-    
-    
+
     img {
         width: 128px;
         height: 82px;
@@ -43,6 +48,13 @@ body {
         display: flex;
         align-items: flex-end;
         font-size: 1.4em;
+    }
+
+    @include mobile-screen {
+        .brandname {
+            font-size: 1rem;
+            padding-right: 3rem;
+        }
     }
 }
 
@@ -62,24 +74,42 @@ body {
         list-style-type: none;
         padding: 1rem;
     }
+
+    @include mobile-screen {
+        display: none;
+    }
 }
 
 .hero {
     background-color: $main-color-white;
     position: relative;
+    display: flex;
 
     img {
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+        max-height: 100%;
     }
 
     .play-buttons {
         position: absolute;
         max-width: 27rem;
+        min-width: 13.5rem;
         left: 0;
         right: 0;
         margin: auto;
-        bottom: -0.2rem;
+        bottom: -0.5rem;
+    }
+
+    @include mobile-screen {
+       
+        .img {
+            
+        }
+        .play-buttons {
+            a {
+                display: inline-block;
+            }
+        }
     }
 
 }
@@ -93,7 +123,6 @@ body {
         flex-basis: 50%;
         img {
             float: left;
-            display: flex;
         }
         blockquote {
             @include font-style-italic;
@@ -116,14 +145,32 @@ body {
     .second > img {
         padding-left: 0rem;
     }
+
+    @include mobile-screen {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        .first {
+            margin: 0;
+            padding: 0;
+            img {
+                transform: scale(0.75);
+            }
+            blockquote {
+                padding: 0;
+                margin: 1rem 1rem 1rem 0;
+            }
+        }
+        .second {
+            display: none;
+        }
+    }
 }
 
 
 .popular-challenges {
     display: block;
     background-color: $main-color-white;
-    width: auto;
-    height: auto;
     padding: 0;
     margin: 0;
     h1 {
@@ -138,11 +185,11 @@ body {
         display: flex;
         justify-content: space-evenly;
 
-        > * {
+        .card {
             @include card;
             display: grid;
             grid-template-rows: 50% 50%;
-            > * {
+            * {
                 grid-row: span 1;
             }
 
@@ -150,6 +197,7 @@ body {
                 background-image: url('img/hero.png');
                 background-repeat: no-repeat;
                 background-size: cover;
+                height: 223px;
             }
 
             .room-content {
@@ -165,9 +213,8 @@ body {
                     justify-content: space-between;
                     padding-bottom: 0.2em;
                     .review {
-                        .star {
-                            color: $main-color-red;
-                        }
+                        color: $main-color-red;
+                    
                     }
                     .participants {
                     } 
@@ -190,14 +237,30 @@ body {
     ul {
         display: flex;
         justify-content: center;
-        margin-top: 0;
-        margin-bottom: 0;
         padding: 4em;
         
         li {
             list-style-type: none;
         }
     }
+
+    @include mobile-screen {
+        h1 {
+            margin: 0;
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+        .challenges {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            .card {
+                flex: 0 0 auto;
+                // display: inline-block;
+            }
+        }
+    }
+
 }
 
 .story {
@@ -261,21 +324,22 @@ body {
     color: $main-color-white;
     font-size: 0.75rem;
     display: flex;
+    padding: 4rem;
 
     .about-esc {
-        margin: 5rem 3rem 1rem 3rem;
+        // margin-right: 2rem;
+        padding-right: 6rem;
     }
 
     .sitemap {
-        display: inline-block;
         white-space: nowrap;
-        margin: 5rem 2rem;
-        padding:0;
+        margin: 0 3rem;
+        padding: 0;
         
     }
 
     .follow-us {
-        margin: 5rem 4rem 0 2rem;
+        margin: 0 3rem;
         padding: 0;
     }
 
@@ -285,6 +349,29 @@ body {
             margin-bottom: 5px;
         }
 
+    }
+    @include mobile-screen {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        * > {
+            flex-basis: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .about-esc {
+            margin: 0;
+            padding: 0;
+        }
+        .sitemap {
+            margin: 0;
+            padding: 0;
+        }
+        .follow-us {
+            margin: 0;
+            padding: 0;
+
+        }
     }
     
 }
