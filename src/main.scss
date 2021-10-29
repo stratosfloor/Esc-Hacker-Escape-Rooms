@@ -110,10 +110,25 @@ body {
         .img {
             
         }
-        .play-buttons {
+        .hero-buttons {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem 1rem 0 1rem;
+            margin: 0;
+
             a {
-                display: inline-block;
+                margin: 0.5rem;
+                &:nth-child(1) {
+                    background-color: transparent;
+                    color: $main-color-lightblue;
+                    font-size: 0.67rem;
+                    text-decoration: underline;
+                    order: 2;
+                }
             }
+
         }
     }
 
@@ -154,7 +169,7 @@ body {
     @include mobile-screen {
         display: inline-block;
         margin: 0;
-        padding: 0;
+        padding: 0 0 1rem 0;
         .first {
             margin: 0;
             padding: 0;
@@ -190,53 +205,46 @@ body {
         display: flex;
         justify-content: space-evenly;
 
-        .card {
-            @include card;
-            display: grid;
-            grid-template-rows: 50% 50%;
-            * {
-                grid-row: span 1;
-            }
-
-            .room-pic {
-                background-image: url('img/hero.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 223px;
-            }
-
-            .room-content {
-                padding: 0.83rem;
-                position: relative;
-                .room-name {
-                    font-size: 1.16rem;
-                    color: black;
-                    }
-                .second-row {
-                    font-size: 0.7rem;
+            .card {
+                @include card;
+                display: block;
+                
+                .room-pic {
+                    height: 50%;
+                    background-image: url('img/hero.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .room-content {
+                    height: 50%;
+                    font-size: 18px;
+                    padding: 0.5rem;
                     display: flex;
-                    justify-content: space-between;
-                    padding-bottom: 0.2em;
-                    .review {
-                        color: $main-color-red;
-                    
+                    flex-direction: column;
+
+                    .room-name {
+                        font-size: 1rem;
                     }
-                    .participants {
-                    } 
-                }
-                .room-info  {
-                    font-size: 0.64rem;
-                }
-                .book-room {
-                    position: absolute;
-                    right: 1%;
-                    bottom: 0.75em;
-                    a {
-                        font-size: 0.75rem;
+                    .second-row {
+                        display: flex;
+                        justify-content: space-between;
+                        .review {
+                            color: $main-color-red;
+                        }
+                    }
+                    .room-info {
+                        display: inline-block;
+                        padding: 0.5rem 0;
+                    }
+                    .book-room {
+                        display: flex;
+                        justify-content: flex-end;
+                        a {
+                            font-size: 0.75rem;
+                        }
                     }
                 }
             }
-        }
     }
     
     ul {
@@ -250,20 +258,21 @@ body {
     }
 
     @include mobile-screen {
-        h1 {
-            margin: 0;
-            padding: 1rem 0;
-            font-size: 1rem;
-        }
-        .challenges {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            .card {
-                flex: 0 0 auto;
-                // display: inline-block;
-            }
-        }
+        display:none;
+        // h1 {
+        //     margin: 0;
+        //     padding: 1rem 0;
+        //     font-size: 1rem;
+        // }
+        // .challenges {
+        //     display: flex;
+        //     flex-wrap: nowrap;
+        //     overflow-x: auto;
+        //     .card {
+        //         flex: 0 0 auto;
+        //         // display: inline-block;
+        //     }
+        // }
     }
 
 }
