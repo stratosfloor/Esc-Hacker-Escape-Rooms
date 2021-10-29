@@ -421,7 +421,7 @@ body {
         padding: 1rem;
         margin: 0;
         display: block;
-        * > {
+        * {
             margin: 0;
             padding: 0;
         }
@@ -439,5 +439,4 @@ body {
 
         }
     }
-    
 }

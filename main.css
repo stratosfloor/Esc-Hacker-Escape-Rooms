@@ -428,7 +428,7 @@ body a {
     margin: 0;
     display: block;
   }
-  .footer * > {
+  .footer * {
     margin: 0;
     padding: 0;
   }
