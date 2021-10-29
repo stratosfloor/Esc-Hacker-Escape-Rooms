@@ -22,7 +22,7 @@ body {
         text-decoration: none;
     }
     @include mobile-screen {
-        background-color: #FAA;
+        background-color: white;
         max-width: 480px;
     }
 }
@@ -255,22 +255,29 @@ body {
     }
 
     @include mobile-screen {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        // display: flex;
+        // flex-wrap: nowrap;
+        // overflow-x: auto;
+        // overflow-y: hidden;
         h1 {
             margin: 0;
             padding: 1rem 0;
             font-size: 1rem;
         }
-        .challenges {
-            // display: flex;
-            // flex-wrap: nowrap;
-            // overflow-x: auto;
-            flex: 0 0 auto;
-            .card {
+        .wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            .challenges {
+                // display: flex;
+                // flex-wrap: nowrap;
+                // overflow-x: auto;
                 flex: 0 0 auto;
-                // display: inline-block;
+                .card {
+                    // flex: 0 0 auto;
+                    // display: inline-block;
+                }
             }
         }
         .pop-play-button {
@@ -278,7 +285,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 7rem 1rem 1rem 1rem;
+            padding: 1rem;
             margin: 0;
             a {
                 &:nth-child(1){
