@@ -21,6 +21,9 @@ body {
         color: $main-color-white;
         text-decoration: none;
     }
+    @include mobile-screen {
+        background-color: #FAA;
+    }
 }
 
 .container {
@@ -282,6 +285,14 @@ body {
     a {
         // ska sätta nåt här
     }
+
+    @include mobile-screen {
+        padding: 2rem 1rem;
+
+        blockquote {
+            padding: 0;
+        }
+    }
 }
 
 .play-grid {
@@ -314,6 +325,32 @@ body {
         a {
             display: inline-block;
             margin-top: 1rem;
+        }
+    }
+
+    @include mobile-screen {
+        .play-onsite-content, .play-online-content {
+            flex-basis: 100%;
+            margin: 0;
+            padding: 1rem 0.5rem;
+            h2 {              
+                margin: 0;
+                padding: 0;
+            }
+            span {
+                margin: 0;
+                padding: 1rem 0;
+            }
+            a {
+                @include play-button;
+                margin: 0;
+                // padding: 0
+            }
+            
+        }
+        .play-online-content {
+            // display: flex;
+            order: 2;
         }
     }
 }
