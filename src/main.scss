@@ -23,6 +23,7 @@ body {
     }
     @include mobile-screen {
         background-color: #FAA;
+        max-width: 480px;
     }
 }
 
@@ -247,32 +248,49 @@ body {
             }
     }
     
-    ul {
+    .pop-play-button {
         display: flex;
         justify-content: center;
-        padding: 4em;
-        
-        li {
-            list-style-type: none;
-        }
+        padding: 3rem;        
     }
 
     @include mobile-screen {
-        display:none;
-        // h1 {
-        //     margin: 0;
-        //     padding: 1rem 0;
-        //     font-size: 1rem;
-        // }
-        // .challenges {
-        //     display: flex;
-        //     flex-wrap: nowrap;
-        //     overflow-x: auto;
-        //     .card {
-        //         flex: 0 0 auto;
-        //         // display: inline-block;
-        //     }
-        // }
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        h1 {
+            margin: 0;
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+        .challenges {
+            // display: flex;
+            // flex-wrap: nowrap;
+            // overflow-x: auto;
+            flex: 0 0 auto;
+            .card {
+                flex: 0 0 auto;
+                // display: inline-block;
+            }
+        }
+        .pop-play-button {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 7rem 1rem 1rem 1rem;
+            margin: 0;
+            a {
+                &:nth-child(1){
+                    background-color: transparent;
+                    color: $main-color-lightblue;
+                    font-size: 0.67rem;
+                    text-decoration: underline;
+                    order: 2;
+                }
+
+            }
+        }
     }
 
 }
