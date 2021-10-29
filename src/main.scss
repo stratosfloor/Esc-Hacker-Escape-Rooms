@@ -77,6 +77,9 @@ body {
         list-style-type: none;
         padding: 1rem;
     }
+    a:hover {
+        color: $main-color-lightblue;
+    }
 
     @include mobile-screen {
         display: none;
@@ -349,7 +352,6 @@ body {
             
         }
         .play-online-content {
-            // display: flex;
             order: 2;
         }
     }
@@ -364,20 +366,13 @@ body {
     padding: 4rem;
 
     .about-esc {
-        // margin-right: 2rem;
         padding-right: 6rem;
     }
 
-    .sitemap {
+    .sitemap, .follow-us {
         white-space: nowrap;
-        margin: 0 3rem;
-        padding: 0;
+        padding: 0 3rem;
         
-    }
-
-    .follow-us {
-        margin: 0 3rem;
-        padding: 0;
     }
 
     ul {
@@ -388,11 +383,11 @@ body {
 
     }
     @include mobile-screen {
-        flex-direction: column;
-        padding: 0;
+        // flex-direction: column;
+        padding: 1rem;
         margin: 0;
+        display: block;
         * > {
-            flex-basis: 100%;
             margin: 0;
             padding: 0;
         }
@@ -402,7 +397,7 @@ body {
         }
         .sitemap {
             margin: 0;
-            padding: 0;
+            padding: 1rem 0;
         }
         .follow-us {
             margin: 0;
