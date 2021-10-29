@@ -16,12 +16,13 @@ html {
 
 body {
     background-color: $main-color-black;
-
+    
     a {
         color: $main-color-white;
         text-decoration: none;
     }
     @include mobile-screen {
+        margin: 0;
         background-color: white;
         max-width: 480px;
     }

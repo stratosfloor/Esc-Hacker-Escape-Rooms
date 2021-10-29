@@ -61,6 +61,7 @@ body a {
 }
 @media screen and (max-width: 640px) {
   body {
+    margin: 0;
     background-color: white;
     max-width: 480px;
   }
