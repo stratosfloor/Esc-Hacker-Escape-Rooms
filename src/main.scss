@@ -5,7 +5,7 @@ $main-color-grey: #B6BDB5;
 $main-color-darkblue: #36769D;
 $main-color-lightblue: #8ACFE5;
 $main-color-white: #FFFFFF;
-$mobile-screen-breakpoint: 640px;
+$mobile-screen-breakpoint: 800px;
 
 @import 'mixins.scss';
 @import 'button-classes.scss';
@@ -15,8 +15,7 @@ html {
 }
 
 body {
-    background-color: $main-color-black;
-    
+    background-color: white;
     a {
         color: $main-color-white;
         text-decoration: none;
@@ -70,9 +69,10 @@ body {
     padding: 0;
 
     ul {
-        display:flex;
+        display: flex;
         margin: 0;
-        justify-content: center;
+        padding: 0 6rem;
+        justify-content: space-around;
     }
 
     li {
@@ -108,10 +108,6 @@ body {
     }
 
     @include mobile-screen {
-       
-        .img {
-            
-        }
         .hero-buttons {
             position: static;
             display: flex;
@@ -123,10 +119,7 @@ body {
             a {
                 margin: 0.5rem;
                 &:nth-child(1) {
-                    background-color: transparent;
-                    color: $main-color-lightblue;
-                    font-size: 0.67rem;
-                    text-decoration: underline;
+                    @include play-button-mobile;
                     order: 2;
                 }
             }
@@ -137,7 +130,7 @@ body {
 }
 .testimonials {
     margin: 0;
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     background-color: $main-color-white;
     display: flex;
 
@@ -162,10 +155,7 @@ body {
         }
     }
     .first {
-        padding-left: 4rem;
-    }
-    .second > img {
-        padding-left: 0rem;
+        padding-left: 3rem;
     }
 
     @include mobile-screen {
@@ -219,7 +209,7 @@ body {
                 }
                 .room-content {
                     height: 50%;
-                    font-size: 18px;
+                    font-size: 0.75rem;
                     padding: 0.5rem;
                     display: flex;
                     flex-direction: column;
@@ -256,10 +246,6 @@ body {
     }
 
     @include mobile-screen {
-        // display: flex;
-        // flex-wrap: nowrap;
-        // overflow-x: auto;
-        // overflow-y: hidden;
         h1 {
             margin: 0;
             padding: 1rem 0;
@@ -271,14 +257,7 @@ body {
             overflow-x: auto;
             overflow-y: hidden;
             .challenges {
-                // display: flex;
-                // flex-wrap: nowrap;
-                // overflow-x: auto;
                 flex: 0 0 auto;
-                .card {
-                    // flex: 0 0 auto;
-                    // display: inline-block;
-                }
             }
         }
         .pop-play-button {
@@ -290,10 +269,7 @@ body {
             margin: 0;
             a {
                 &:nth-child(1){
-                    background-color: transparent;
-                    color: $main-color-lightblue;
-                    font-size: 0.67rem;
-                    text-decoration: underline;
+                    @include play-button-mobile;
                     order: 2;
                 }
 
@@ -317,10 +293,6 @@ body {
         color: $main-color-white;
         font-size: 1.16rem;
         padding: 0 8rem;
-    }
-
-    a {
-        // ska sätta nåt här
     }
 
     @include mobile-screen {

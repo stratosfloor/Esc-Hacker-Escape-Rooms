@@ -32,6 +32,14 @@
     box-sizing: border-box;
 }
 
+@mixin play-button-mobile {
+    @include play-button;
+    background-color: transparent;
+    color: $main-color-lightblue;
+    font-size: 0.67rem;
+    text-decoration: underline;
+}
+
 @mixin mobile-screen {
     @media screen and (max-width: $mobile-screen-breakpoint) {
         @content;
