@@ -5,7 +5,7 @@ $main-color-grey: #B6BDB5;
 $main-color-darkblue: #36769D;
 $main-color-lightblue: #8ACFE5;
 $main-color-white: #FFFFFF;
-$mobile-screen-breakpoint: 800px;
+$mobile-screen-breakpoint: 640px;
 
 @import 'mixins.scss';
 @import 'button-classes.scss';
@@ -23,7 +23,7 @@ body {
     @include mobile-screen {
         margin: 0;
         background-color: white;
-        max-width: 480px;
+        max-width: auto;
     }
 }
 
@@ -32,7 +32,7 @@ body {
     margin: 5px auto;
 
     @include mobile-screen {
-        max-width: 480px;
+        max-width: auto;
         margin: 0 auto;
     }
 }
@@ -178,7 +178,6 @@ body {
         }
     }
 }
-
 
 .popular-challenges {
     display: block;
@@ -353,7 +352,6 @@ body {
             a {
                 @include play-button;
                 margin: 0;
-                // padding: 0
             }
             
         }
