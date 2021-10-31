@@ -323,7 +323,7 @@ body {
             margin: 0 4rem;
         }
         h2 {
-            font-size: 32px;
+            font-size: 1.33rem;
             margin-top: 3rem;
         }
         span {
@@ -390,22 +390,13 @@ body {
         padding: 1rem;
         margin: 0;
         display: block;
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .about-esc {
+        *, .about-esc, .sitemap, .follow-us {
             margin: 0;
             padding: 0;
         }
         .sitemap {
-            margin: 0;
             padding: 1rem 0;
-        }
-        .follow-us {
-            margin: 0;
-            padding: 0;
+         }
 
-        }
     }
 }

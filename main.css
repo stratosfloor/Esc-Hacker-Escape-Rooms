@@ -377,7 +377,7 @@ body a {
   margin: 0 4rem;
 }
 .play-grid .play-onsite-content h2, .play-grid .play-online-content h2 {
-  font-size: 32px;
+  font-size: 1.33rem;
   margin-top: 3rem;
 }
 .play-grid .play-onsite-content span, .play-grid .play-online-content span {
@@ -446,21 +446,12 @@ body a {
     margin: 0;
     display: block;
   }
-  .footer * {
-    margin: 0;
-    padding: 0;
-  }
-  .footer .about-esc {
+  .footer *, .footer .about-esc, .footer .sitemap, .footer .follow-us {
     margin: 0;
     padding: 0;
   }
   .footer .sitemap {
-    margin: 0;
     padding: 1rem 0;
-  }
-  .footer .follow-us {
-    margin: 0;
-    padding: 0;
   }
 }
 
