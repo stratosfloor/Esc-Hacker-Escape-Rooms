@@ -5,7 +5,7 @@ $main-color-grey: #B6BDB5;
 $main-color-darkblue: #36769D;
 $main-color-lightblue: #8ACFE5;
 $main-color-white: #FFFFFF;
-$mobile-screen-breakpoint: 640px;
+$mobile-screen-breakpoint: 800px;
 
 @import 'mixins.scss';
 @import 'button-classes.scss';
@@ -387,7 +387,6 @@ body {
 
     }
     @include mobile-screen {
-        // flex-direction: column;
         padding: 1rem;
         margin: 0;
         display: block;
