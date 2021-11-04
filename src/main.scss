@@ -55,9 +55,12 @@ body {
     }
 
     @include mobile-screen {
+        img {
+            margin-right: 0.4rem;
+        }
         .brandname {
             font-size: 1rem;
-            padding-right: 3rem;
+            padding-right: 5rem;  
         }
     }
 }
@@ -68,7 +71,7 @@ body {
     margin: 0;
     padding: 0;
 
-    ul {
+    .navmenu {
         display: flex;
         margin: 0;
         padding: 0 6rem;
@@ -82,9 +85,21 @@ body {
     a:hover {
         color: $main-color-lightblue;
     }
+    .hamburger {
+        display: none;
+    }
 
     @include mobile-screen {
-        display: none;
+        .navmenu {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 30px 20px 0 0;
+        }
     }
 }
 
