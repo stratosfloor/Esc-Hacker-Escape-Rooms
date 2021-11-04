@@ -34,9 +34,11 @@ body {
     @include mobile-screen {
         max-width: auto;
         margin: 0 auto;
+        z-index: 1;
     }
 }
 
+// .header, .hero, .testimonials
 
 .header {
     background-color: $main-color-black;
@@ -91,8 +93,51 @@ body {
 
     @include mobile-screen {
         .navmenu {
-            display: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            position: absolute;
+            z-index: -1;
+            .closeBtn {
+                display:none;
+            }
+
         }
+        // HÄR HÅLLER JAG PÅ
+        .active {
+            @include font-style-bold;
+            z-index: 11;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $main-color-black;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            // margin: 50px;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            bottom: 20px; 
+            right: 20px;
+            li {
+                display: flex;
+                justify-content: center;
+            }
+            .closeBtn {
+                display: block;
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 20px;
+            }
+            
+        }
+        
+
+
         .hamburger {
             display: block;
             position: absolute;
