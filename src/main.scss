@@ -10,8 +10,8 @@ $mobile-screen-breakpoint: 800px;
 @import 'mixins.scss';
 @import 'button-classes.scss';
 
-// class for opacity 0.5
-.opacity {
+// class for background-state 
+.background-state {
     opacity: 0.5;
     transition: opacity 0.1s;
 }
@@ -94,7 +94,7 @@ body {
     a:hover {
         color: $main-color-lightblue;
     }
-    .hamburger {
+    .hamburger, .closeBtn {
         display: none;
     }
 
