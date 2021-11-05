@@ -378,6 +378,9 @@ body a {
   .popular-challenges .wrapper .challenges {
     flex: 0 0 auto;
   }
+  .popular-challenges .wrapper .card {
+    margin: 20px;
+  }
   .popular-challenges .pop-play-button {
     position: static;
     display: flex;

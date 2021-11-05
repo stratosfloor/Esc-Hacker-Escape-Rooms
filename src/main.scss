@@ -103,7 +103,6 @@ body {
         .navmenu {
             display: none;
             padding: 0;
-            // position: fixed;
             z-index: -1;
             .closeBtn {
                 display:none;
@@ -321,6 +320,10 @@ body {
             .challenges {
                 flex: 0 0 auto;
             }
+            .card {
+                margin: 20px;
+            }
+
         }
         .pop-play-button {
             position: static;
