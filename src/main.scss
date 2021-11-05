@@ -101,10 +101,9 @@ body {
 
     @include mobile-screen {
         .navmenu {
-            display: flex;
-            justify-content: space-around;
+            display: none;
             padding: 0;
-            position: absolute;
+            // position: fixed;
             z-index: -1;
             .closeBtn {
                 display:none;
@@ -115,8 +114,6 @@ body {
             @include font-style-bold;
             z-index: 11;
             display: flex;
-
-            // fixed or absolute depending on prefernce
             position: fixed;
             flex-direction: column;
             justify-content: center;

@@ -146,10 +146,8 @@ body a {
 }
 @media screen and (max-width: 800px) {
   .navbar .navmenu {
-    display: flex;
-    justify-content: space-around;
+    display: none;
     padding: 0;
-    position: absolute;
     z-index: -1;
   }
   .navbar .navmenu .closeBtn {
